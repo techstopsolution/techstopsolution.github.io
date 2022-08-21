@@ -87,7 +87,10 @@ section {
 #topbar .contact-info i a:hover {
     text-decoration: none;
 }
-
+#topbar .container {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
@@ -123,7 +126,12 @@ section {
 
 /* Hiro Section Starts */
 #hero h1 {
-    color: #ededed;
+    color: #fff;
+}
+
+.hiro-second h1 {
+    color: #636263 !important;
+    letter-spacing: 1px;
 }
 
 #hero h2 {
@@ -139,6 +147,13 @@ section {
 .hiro-second h1 {
     text-align: center;
 }
+.hiro-second {
+    background: url(../img/hero-second-bg.jpg) top left !important;
+    background-size: cover !important;
+}
+
+
+
 
 
 /* Featured Services Section */
@@ -380,12 +395,22 @@ section {
     }
 }
 @media only screen and (max-width: 768px) {
+    section {
+        padding: 80px 0;
+    }
     .hiro-second {
         height: 30vh !important;
     }
+    .hiro-second h1 {
+        font-size: 35px !important;
+    }
   
 }
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .hiro-second {
+        background: url(../img/hero-second-bg.jpg) top right !important;
+    }
+}
 @media only screen and (max-width: 480px) {
     #topbar {
         height: 60px;
@@ -393,10 +418,14 @@ section {
     .contact-info {
         display: block !important;
         line-height: 20px !important;
+        padding-left: 10px;
     }
     #topbar .contact-info i {
         margin: 10px 0px;
         margin-left: 0 !important;
     }
+    .hiro-second h1 {
+        font-size: 28px !important;
+    }
 }
-@media only screen and (max-width: 390px) {}
+/* @media only screen and (max-width: 390px) {} */
