@@ -2,26 +2,51 @@
 .theme-color {
     color: #2c4dd8;
 }
+
 section {
     padding: 100px 0;
 }
+
 .section-title {
     padding-bottom: 50px;
 }
+
 .section-title h2 {
     font-size: 16px;
     color: #2c4dd8;
 }
+
 .section-title h3 {
     font-size: 40px;
 }
+
 .section-title h3 span {
     color: #2c4dd8;
 }
+
 .y-center-contant {
     display: flex;
     align-items: center;
 }
+
+.error {
+    color: #f00;
+    font-size: 15px;
+}
+
+/* Type Number arrow remove */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 /* Button css */
 .btn-primary:hover {
@@ -141,12 +166,15 @@ section {
 #hero h1 span {
     color: #fff;
 }
+
 .hiro-second {
     height: 40vh !important;
 }
+
 .hiro-second h1 {
     text-align: center;
 }
+
 .hiro-second {
     background: url(../img/hero-second-bg.jpg) top left !important;
     background-size: cover !important;
@@ -305,6 +333,121 @@ section {
     width: 300px;
     margin-bottom: 20px;
 }
+
+
+/* Contact Section Starts */
+.contact .php-email-form button[type="submit"] {
+    background: transparent;
+}
+.contact .php-email-form button[type="submit"]:hover {
+    background-color: transparent;
+}
+.contact-details {
+    height: 100%;
+}
+.contact .info-box {
+    height: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-msg {
+    margin-left: 10px;
+}
+.contact-msg .snippet {
+    margin-left: 20px;
+}
+
+/* Three Dots CSS */
+.dot-elastic {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #2c4dd8;
+    color: #9880ff;
+    animation: dotElastic 1s infinite linear;
+}
+  
+.dot-elastic::before, .dot-elastic::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-elastic::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #2c4dd8;
+    color: #9880ff;
+    animation: dotElasticBefore 1s infinite linear;
+}
+  
+.dot-elastic::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #2c4dd8;
+    color: #9880ff;
+    animation: dotElasticAfter 1s infinite linear;
+}
+@keyframes dotElasticBefore {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1.5);
+    }
+    50% {
+      transform: scale(1, 0.67);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+@keyframes dotElastic {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 1.5);
+    }
+    75% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+@keyframes dotElasticAfter {
+    0% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1, 0.67);
+    }
+    75% {
+      transform: scale(1, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+
 
 
 /* Footer Section Starts */
