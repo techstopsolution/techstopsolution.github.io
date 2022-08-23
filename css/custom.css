@@ -350,7 +350,9 @@ input[type=number] {
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.contact .info-box i {
+    color: #2c4dd8;
 }
 .contact-msg {
     margin-left: 10px;
@@ -513,6 +515,9 @@ input[type=number] {
 }
 .copyright-footer {
     color: #e2e2e2;
+}
+.back-to-top {
+    background: #2c4dd8;
 }
 
 
