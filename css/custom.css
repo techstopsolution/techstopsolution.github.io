@@ -99,6 +99,8 @@ input[type=number] {
 .counts {
     padding: 0px;
 }
+
+
 /* TopBar Section Starts */
 #topbar {
     background: #2c4dd8;
@@ -112,6 +114,7 @@ input[type=number] {
 #topbar .contact-info i a:hover {
     text-decoration: none;
 }
+
 #topbar .container {
     display: flex;
     justify-content: space-between;
@@ -214,23 +217,28 @@ input[type=number] {
     padding: 50px 30px;
     border-radius: 0.5rem;
 }
+
 .service-bg-icon {
     position: absolute;
     bottom: 0px;
 }
+
 .service-bg-icon i { 
     font-size: 100%;
 }
+
 .services .icon-box .icon {
     border-radius: 50%;
     margin-bottom: 30px;
 }
+
 .services .icon-box h4 {
     margin-bottom: 20px;
 }
+
 .services .icon-box:hover .icon {
-    border: 3px solid #2c4dd8;
-    box-shadow: #00000029 0px 1px 5px, #2c4ed881 0px 0px 0px 5px;
+    border: 1px solid #2c4dd8;
+    box-shadow: #e7f1fd 0px 1px 5px, #e7f1fd 0px 0px 0px 5px;
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
@@ -242,6 +250,7 @@ input[type=number] {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #2c4dd8;
 }
+
 .testimonials .testimonial-item h3 {
     font-size: 24px;
 }
@@ -258,12 +267,15 @@ input[type=number] {
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     color: #2c4dd8;
 }
+
 .portfolio .portfolio-item .portfolio-info .details-link {
     right: 20px;
 }
+
 .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
     color: #2c4dd8;
 }
+
 .portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
     font-size: 28px;
 }
@@ -276,6 +288,7 @@ input[type=number] {
     background-attachment: fixed;
     color: #fff;
 }
+
 .consultation-content h2 {
     font-size: 40px;
 }
@@ -289,17 +302,21 @@ input[type=number] {
     display: flex;
     align-items: center;
 }
+
 .why-choose-us .content h3 {
     font-size: 38px;
 }
+
 .why-choose-us .section-title {
     text-align: left;
     padding-bottom: 0;
 }
+
 .why-choose-us .section-title p {
     width: 100%;
     margin-bottom: 20px;
 }
+
 .why-choose-us .section-title a {
     display: inline-block;
 }
@@ -309,10 +326,12 @@ input[type=number] {
 .faq {
     padding: 100px 0;
 }
+
 .faq .section-title {
     text-align: left;
     padding-bottom: 0%;
 }
+
 .faq .section-title p {
     width: 100%;
     margin-bottom: 20px;
@@ -329,6 +348,7 @@ input[type=number] {
 .career .section-title h3 {
     font-size: 25px;
 }
+
 .logo-carrer {
     width: 300px;
     margin-bottom: 20px;
@@ -339,27 +359,34 @@ input[type=number] {
 .contact .php-email-form button[type="submit"] {
     background: transparent;
 }
+
 .contact .php-email-form button[type="submit"]:hover {
     background-color: transparent;
 }
+
 .contact-details {
     height: 100%;
 }
+
 .contact .info-box {
     height: 86%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .contact .info-box i {
     color: #2c4dd8;
 }
+
 .contact-msg {
     margin-left: 10px;
 }
+
 .contact-msg .snippet {
     margin-left: 20px;
 }
+
 
 /* Three Dots CSS */
 .dot-elastic {
@@ -398,6 +425,7 @@ input[type=number] {
     color: #9880ff;
     animation: dotElasticAfter 1s infinite linear;
 }
+
 @keyframes dotElasticBefore {
     0% {
       transform: scale(1, 1);
@@ -415,6 +443,7 @@ input[type=number] {
       transform: scale(1, 1);
     }
 }
+
 @keyframes dotElastic {
     0% {
       transform: scale(1, 1);
@@ -432,6 +461,7 @@ input[type=number] {
       transform: scale(1, 1);
     }
 }
+
 @keyframes dotElasticAfter {
     0% {
       transform: scale(1, 1);
@@ -457,65 +487,85 @@ input[type=number] {
     padding: 0%;
     background: #1f1f1f;
 }
+
 #footer .footer-top {
     padding: 100px 0 70px 0;
 }
+
 #footer .footer-top {
     background: #252525;
 }
+
 .footer-logo {
     max-height: 70px;
 }
+
 #footer .footer-top h4 {
     color: #ffffff;
 }
+
 #footer .footer-top .footer-contact p {
     color: #e2e2e2;
 }
+
 #footer .footer-top .footer-links ul a {
     color: #e2e2e2;
 }
+
 #footer .footer-top .footer-links ul a:hover {
     color: #2c4dd8;
 }
+
 #footer .footer-top .footer-links ul i {
     color: #2c4dd8;
 }
+
 #footer .footer-top .social-links a {
    background: #2c4dd8;
 }
+
 #footer .footer-newsletter {
     background: none;
     padding: 0px;
 }
+
 #footer .footer-newsletter form input[type="email"] {
     outline: none;
 }
+
 #footer .footer-newsletter form {
     border: 1px solid #2c4dd8;
     border-right: none;
 }
+
 .social-link i {
     width: 22px;
 }
+
 .social-links .facebook:hover {
     background: #1877f2 !important;
 }
+
 .social-links .twitter:hover {
     background: #55acee !important;
 }
+
 .social-links .instagram:hover {
     background: linear-gradient(29.61deg, #f38334 0%, #da2e7d 50.39%, #6b54c6 100%) !important;
 }
+
 .social-links .skype:hover {
     background: #1877f2 !important;
 }
+
 .social-links .linkedin:hover {
     background: #0a66c2 !important;
 }
+
 .copyright-footer {
     color: #e2e2e2;
 }
+
 .back-to-top {
     background: #2c4dd8;
 }
@@ -523,57 +573,78 @@ input[type=number] {
 
 
 @media only screen and (max-width: 1366px) {}
+
 @media only screen and (max-width: 1200px) {
+    
     .about .content h3 {
         font-size: 35px;
     }
+
 }
+
 @media only screen and (max-width: 1024px) {
+    
     .about .content h3 {
         font-size: 33px;
     }
+
 }
+
 @media only screen and (max-width: 992px) {
+
     .about .content h3 {
         font-size: 40px;
     }
+    
     .why-choose-us .section-title {
         text-align: center;
         padding-bottom: 0px;
     }
+
 }
 @media only screen and (max-width: 768px) {
+    
     section {
         padding: 80px 0;
     }
+    
     .hiro-second {
         height: 30vh !important;
     }
+    
     .hiro-second h1 {
         font-size: 35px !important;
     }
-  
+
 }
 @media only screen and (max-width: 576px) {
+
     .hiro-second {
         background: url(../img/hero-second-bg.jpg) top right !important;
     }
+
 }
 @media only screen and (max-width: 480px) {
+    
     #topbar {
         height: 60px;
     }
+
     .contact-info {
         display: block !important;
         line-height: 20px !important;
         padding-left: 10px;
     }
+
     #topbar .contact-info i {
         margin: 10px 0px;
         margin-left: 0 !important;
     }
+
     .hiro-second h1 {
         font-size: 28px !important;
     }
+
 }
+
 /* @media only screen and (max-width: 390px) {} */

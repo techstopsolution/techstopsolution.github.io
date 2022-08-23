@@ -131,26 +131,22 @@
 						</div>
 					</div>
 					<div class="col-lg-6 my-3">
-                        <!-- <form action="javascript:sendMail()" method="post" role="form" class="php-email-form"> -->
-                        <form method="post" role="form" class="php-email-form">
+                        <!-- <form action="javascript:void();" method="post" role="form" class="php-email-form"> -->
+                        <form action="javascript:void();" method="post" class="php-email-form">
 							<div class="row">
 								<div class="col-md-6 form-group">
 									<input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
-                                    <span class="error name-error"></span>
 								</div>
 								<div class="col-md-6 form-group">
 									<input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-                                    <span class="error email-error"></span>
 								</div>
 							</div>
 							<div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="number" name="number" class="form-control" id="number" placeholder="Your Number">
-                                    <span class="error number-error"></span>
 								</div>
 								<div class="col-md-6 form-group">
                                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                                    <span class="error subject-error"></span>
 								</div>
 							</div>
 							<div class="form-group">
@@ -158,7 +154,7 @@
                                 <span class="error message-error"></span>
 							</div>
 							<div class="d-flex align-items-center">
-								<button type="button" id="submit" class="btn btn-primary my-btn-primary">Send Message</button>
+								<button type="submit" class="btn btn-primary my-btn-primary submit">Send Message</button>
                                 <div class="contact-msg">
                                     <span class="text-success"></span>
                                     <div class="snippet d-none" data-title=".dot-elastic">
@@ -248,7 +244,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Manu</h4>
+                        <h4>Menu</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
@@ -258,7 +254,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                        <h4>Policies & more</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="career.html">Career</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="privacy policy.html">Privacy Policy</a></li>
@@ -308,7 +304,8 @@
     <script src="vendor/waypoints/noframework.waypoints.js"></script>
 
     <script src="vendor/js-email-form/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
     <script src="vendor/js-email-form/smtp.js"></script>
     <script src="vendor/js-email-form/validate.js"></script>
     
