@@ -346,21 +346,47 @@ input[type=number] {
 
 /* Career Section Starts */
 .career .section-title h3 {
-    font-size: 25px;
+    font-size: 24px;
+    max-width: 545px;
+    margin: auto;
+}
+.career .container .container {
+    max-width: 1024px;
+}
+.logo-career {
+    width: 230px;
+    margin-bottom: 10px;
 }
 
-.logo-carrer {
-    width: 300px;
-    margin-bottom: 20px;
+.career .career-form input, .career .career-form select {
+    padding: 10px 15px;
 }
 
+.career .career-form input, .career .career-form textarea, .career .career-form select {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.career .career-form .form-select.error {
+    color: #212529;
+}
+
+.career-msg {
+    display: block;
+    margin-top: 20px;
+}
+
+.career-msg .snippet {
+    display: none;
+}
 
 /* Contact Section Starts */
-.contact .php-email-form button[type="submit"] {
+.contact .js-email-form button[type="submit"] {
     background: transparent;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .js-email-form button[type="submit"]:hover {
     background-color: transparent;
 }
 
@@ -387,7 +413,7 @@ input[type=number] {
     margin-left: 20px;
 }
 
-.snippet {
+.contact-msg .snippet {
     display: none;
 }
 
@@ -621,6 +647,19 @@ input[type=number] {
         text-align: center;
         padding-bottom: 0px;
     }
+    
+    .error {
+        font-size: 13px;
+    }
+
+    .logo-career {
+        width: 185px;
+    }
+
+    .career .section-title h3 {
+        font-size: 20px;
+        max-width: 455px;
+    }
 
 }
 @media only screen and (max-width: 768px) {
@@ -637,11 +676,24 @@ input[type=number] {
         font-size: 35px !important;
     }
 
+    .logo-career {
+        width: 170px;
+    }
+
 }
 @media only screen and (max-width: 576px) {
 
     .hiro-second {
         background: url(../img/hero-second-bg.jpg) top right !important;
+    }
+
+    .career .section-title h3 {
+        font-size: 18px;
+        max-width: 395px;
+    }
+
+    .career .section-title {
+        padding-bottom: 25px;
     }
 
 }
@@ -664,6 +716,14 @@ input[type=number] {
 
     .hiro-second h1 {
         font-size: 28px !important;
+    }
+
+    .career .section-title h3 {
+        max-width: 256px;
+    }
+
+    .logo-career {
+        width: 155px;
     }
 
 }

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // validate the comment form when it is submitted
-    $(".php-email-form").validate({
+    $(".js-email-form").validate({
         rules: {
 
             name:{
@@ -49,7 +49,7 @@ $(document).ready(function() {
     $(".submit").click(function() {
 
         
-        if($(".php-email-form").valid()) {
+        if($(".js-email-form").valid()) {
             $(".contact-msg").find(".snippet").css("display", "block");
 
             // SMTP JS
@@ -207,7 +207,7 @@ $(document).ready(function() {
                         $(".contact-msg").find(".snippet").css("display", "none");
                         $(".contact-msg").find(".contact-result-text").css("color", "#4CAF50");
                         $(".contact-msg").find(".contact-result-text").text("Your message has been successfully sent!");
-                        $(".php-email-form").trigger("reset");
+                        $(".js-email-form").trigger("reset");
                         
                     }
                     else{
@@ -215,7 +215,7 @@ $(document).ready(function() {
                         $(".contact-msg").find(".contact-result-text").css("color", "#f00");
                         $(".contact-msg").find(".contact-result-text").text("Sorry, cannot send the message");
                         console.error (message);
-                        $(".php-email-form").trigger("reset");
+                        $(".js-email-form").trigger("reset");
                     }
                 }
             );
