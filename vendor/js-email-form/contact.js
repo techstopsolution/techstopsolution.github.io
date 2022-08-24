@@ -47,7 +47,6 @@ $(document).ready(function() {
     });
 
     $(".submit").click(function() {
-
         
         if($(".js-email-form").valid()) {
             $(".contact-msg").find(".snippet").css("display", "block");
