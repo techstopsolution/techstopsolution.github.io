@@ -198,7 +198,7 @@ $(document).ready(function() {
             Email.send({
                 SecureToken : "9bc6a945-2cb6-4da3-8050-56377dfade60",
                 To : 'ceo@techstopsolution.com',
-                From : "hostingdwork.space@gmail.com",
+                From : "hostingwork.space@gmail.com",
                 Subject : "New message on contact from "+name,
                 Body : Body
             }).then(
