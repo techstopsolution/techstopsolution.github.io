@@ -387,6 +387,10 @@ input[type=number] {
     margin-left: 20px;
 }
 
+.snippet {
+    display: none;
+}
+
 
 /* Three Dots CSS */
 .dot-elastic {
