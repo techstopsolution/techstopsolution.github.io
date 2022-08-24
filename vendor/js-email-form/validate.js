@@ -222,9 +222,4 @@ $(document).ready(function() {
         }
 
     });
-    
-
-
-
-
 });
