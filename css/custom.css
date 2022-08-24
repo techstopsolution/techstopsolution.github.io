@@ -575,6 +575,23 @@ input[type=number] {
 }
 
 
+/* 404 error section starts */
+.page-not-found .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+.page-not-found .image-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.page-not-found .image-wrap img {
+    width: 100%;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 1366px) {}
 
