@@ -155,6 +155,8 @@ input[type=number] {
 /* Hiro Section Starts */
 #hero h1 {
     color: #fff;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
 .hiro-second h1 {
@@ -162,8 +164,10 @@ input[type=number] {
     letter-spacing: 1px;
 }
 
-#hero h2 {
+#hero p {
     color: #ededed;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 #hero h1 span {
@@ -183,6 +187,9 @@ input[type=number] {
     background-size: cover !important;
 }
 
+.hiro-img img {
+    width: 100%;
+}
 
 
 
@@ -619,12 +626,25 @@ input[type=number] {
 
 
 
-@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1400px) {
+    #hero h1 {
+        font-size: 36px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     
     .about .content h3 {
         font-size: 35px;
+    }
+
+    #hero h1 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    #hero p {
+        font-size: 16px;
     }
 
 }
@@ -638,6 +658,10 @@ input[type=number] {
 }
 
 @media only screen and (max-width: 992px) {
+
+    .hiro-img img {
+        display: none;
+    }
 
     .about .content h3 {
         font-size: 40px;
