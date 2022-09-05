@@ -154,7 +154,6 @@ input[type=number] {
 
 /* Hiro Section Starts */
 #hero h1 {
-    color: #fff;
     font-size: 40px;
     margin-bottom: 15px;
 }
@@ -165,13 +164,9 @@ input[type=number] {
 }
 
 #hero p {
-    color: #ededed;
+    color: gray;
     font-size: 20px;
     margin-bottom: 15px;
-}
-
-#hero h1 span {
-    color: #fff;
 }
 
 .hiro-second {
