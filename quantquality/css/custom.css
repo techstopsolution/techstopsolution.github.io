@@ -685,7 +685,12 @@ footer .footer-bar,
 .gauge .slider {
     height: 200px;
 }
-
+.endoscope-inspection-items {
+    margin-bottom: 10px;
+}
+.endoscope-inspection-img {
+    height: 235px;
+}
 
 /* =================================== Contact Us Page Starts =================================== */
 .form-control:focus {
@@ -712,6 +717,7 @@ footer .footer-bar,
   
 .features-item {
     transition: opacity 200ms ease;
+    padding-right: 40px;
 }
 .features-item:hover {
     opacity: 0.7;
@@ -720,19 +726,32 @@ footer .footer-bar,
   
 .features-item-header {
     color: black;
+    font-size: 1.4rem !important;
+    margin-bottom: 0;
+    position: relative;
 }
-
+.features-item-header::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ed2931;
+    position: absolute;
+    top: 30px;
+    right: -20px;
+}
 .features-item-text {
     color: #8492a6;
-} 
-  
-.features-item-header {
-    margin-bottom: 0;
-    font-size: 1.4rem !important;
 }
-  
 .features-item-text {
     margin-top: 0.3rem;
+}
+.second-features-item {
+    padding-right: 0px;
+    padding-left: 40px;
+}
+.second-features-item .features-item-header::before {
+    left: -20px;
 }
 
 /* =================================== Terms And Use Page Starts =================================== */
@@ -786,9 +805,7 @@ footer .footer-bar,
     .list-2 {
         grid-column: 3;
     }
-    .list-2 .features-item-header:first-child {
-        margin-top: 1.45rem;
-    }
+    
 }
 
 
@@ -830,6 +847,35 @@ footer .footer-bar,
     .navbar.nav-light .navbar-nav .nav-item .nav-link {
         color: #24272c;
     }
+
+    .gauge .slider {
+        height: 165px;
+    }
+
+    .features-image {
+        display: none;
+    }
+    .list-1 {
+        text-align: left;
+    }
+    .list-2 {
+        grid-column: 2;
+    }
+    .features-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-item {
+        padding-right: unset;
+        padding-left: 40px;
+    }
+    .list-1 .features-item-header::before {
+        left: -30px;
+        top: 12px;
+    }
+    .second-features-item .features-item-header::before {
+        top: 12px;
+        left: -30px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -863,6 +909,30 @@ footer .footer-bar,
         font-size: 32px !important;
     }
 
+    .endoscope-inspection-img {
+        height: auto;
+    }
+
+    .gauge .slider {
+        height: 120px;
+    }
+
+    .features-item-header::before {
+        content: none ;
+    }
+    
+    .features-item {
+        padding: 0px 10px;
+    }
+
+    .list-2 {
+        grid-column: 1;
+    }
+
+    .features-inner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -872,6 +942,10 @@ footer .footer-bar,
 
     .main-hedding {
         font-size: 24px !important;
+    }
+
+    .features-item-header {
+        font-size: 1.2rem !important;
     }
 
 }
@@ -892,7 +966,7 @@ footer .footer-bar,
     }
 
     .inspection-sorting .slider {
-        height: 225px;
+        height: 100px;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -906,7 +980,7 @@ footer .footer-bar,
     }
 
     .inspection-sorting .slider {
-        height: 170px;
+        height: 80px;
     }
 
 }

@@ -124,3 +124,8 @@ animations.forEach(animation => {
         letter.style.animationDelay = (i * 0.010) + 's';
     });
 })
+
+while(i == 1){
+    $('#animate').animo( { animation: ['tada', 'bounce'], duration: 2 } );
+    i++;
+}
