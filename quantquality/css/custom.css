@@ -58,7 +58,7 @@ input[type=number] {
     margin-bottom: 12px;
     margin-top: 40px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -91,7 +91,7 @@ input[type=number] {
   
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #ed2931;
 }
   
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -108,8 +108,8 @@ input[type=number] {
   
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 10px;
+    top: 6px;
     width: 5px;
     height: 10px;
     border: solid white;
@@ -800,7 +800,9 @@ footer .footer-bar,
     align-items: center;
     font-size: 22px;
 }
-
+.contact-details {
+    margin-left: 1.5rem;
+}
 
 /* =================================== Technology Page Starts =================================== */
 .features-image {
@@ -938,16 +940,6 @@ footer .footer-bar,
     margin: 30px 0px;
     width: 275px;
 }
-.apply-btn .btn-primary {
-    color: #fff !important;
-    background-color: #0d6efd !important;
-    border-color: #0d6efd !important;
-}
-.apply-btn .btn-primary:hover {
-    color: #fff;
-    background-color: #0b5ed7 !important;
-    border-color: #0a58ca !important;
-}
 .apply-now-wrap .iti.iti--allow-dropdown {
     width: 100%;
 }
@@ -1023,6 +1015,11 @@ footer .footer-bar,
 }
 
 
+@media only screen and (max-width: 1200px) {
+    #careerTable {
+        min-width: 1034px;
+    }
+}
 @media only screen and (max-width: 992px) {
     .navbar.nav-light.nav-sticky .nav-item .nav-link {
         color: #24272c;
@@ -1115,6 +1112,10 @@ footer .footer-bar,
 
     .side-navigation .list-group-item .side-navigation-name-wrap {
         margin: 10px 65px 10px 15px;
+    }
+
+    .border-left-custom {
+        border: none !important;
     }
 
 }

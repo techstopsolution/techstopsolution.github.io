@@ -73,18 +73,18 @@ $(document).ready(function(){
 });
 
 
-function visible(partial) {
-    var $t = partial,
-    $w = jQuery(window),
-    viewTop = $w.scrollTop(),
-    viewBottom = viewTop + $w.height(),
-    _top = $t.offset().top,
-    _bottom = _top + $t.height(),
-    compareTop = partial === true ? _bottom : _top,
-    compareBottom = partial === true ? _top : _bottom;
+// function visible(partial) {
+//     var $t = partial,
+//     $w = jQuery(window),
+//     viewTop = $w.scrollTop(),
+//     viewBottom = viewTop + $w.height(),
+//     _top = $t.offset().top,
+//     _bottom = _top + $t.height(),
+//     compareTop = partial === true ? _bottom : _top,
+//     compareBottom = partial === true ? _top : _bottom;
 
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
-}
+//     return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+// }
 
 // About Counter counting
 $(window).scroll(function(){
@@ -127,11 +127,33 @@ animations.forEach(animation => {
 })
 
 
+
+
+// career filter query
+$('#search').on('keyup', function() {
+    var value = $(this).val();
+    var patt = new RegExp(value, "i");
+
+    $('#careerTable').find('tr').each(function() {
+        var $table = $(this);
+        if (!($table.find('td a').text().search(patt) >= 0)) {
+            $table.not('.t_head').hide();
+        }
+        if (($table.find('td').text().search(patt) >= 0)) {
+            $(this).show();
+        }
+    });
+});
+
+
+
+
+
 // International Teliphone Input query 
 var input = document.querySelector("#phoneNumber");
 var iti = window.intlTelInput(input, {
     // separateDialCode:true,
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
+    utilsScript: "js/utils.js",
 });
 
 // store the instance variable so we can access it in the console e.g. window.iti.getNumber()
