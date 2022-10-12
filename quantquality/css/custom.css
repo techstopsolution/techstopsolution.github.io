@@ -1019,6 +1019,24 @@ footer .footer-bar,
     #careerTable {
         min-width: 1034px;
     }
+    .dot-line {
+        width: 70px;
+    }
+    .list-2 .dot-line {
+        left: -56px;
+    }
+    .list-1 .dot-line {
+        right: -56px;
+    }
+    .dot-line.center-line {
+        width: 30px;
+    }
+    .list-1 .dot-line.center-line {
+        right: -16px;
+    }
+    .list-2 .dot-line.center-line {
+        left: -16px;
+    }
 }
 @media only screen and (max-width: 992px) {
     .navbar.nav-light.nav-sticky .nav-item .nav-link {
@@ -1056,6 +1074,12 @@ footer .footer-bar,
     .second-features-item .features-item-header::before {
         top: 12px;
         left: -25px;
+    }
+    .dot-line {
+        display: none;
+    }
+    .features-item-header {
+        font-size: 1rem !important;
     }
 }
 
