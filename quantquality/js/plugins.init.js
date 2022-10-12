@@ -276,7 +276,6 @@ try {
         `url(${e.getAttribute('data-background')})`;
     })
 
-
 } catch (err) {
 
 }
