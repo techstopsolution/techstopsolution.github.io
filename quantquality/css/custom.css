@@ -1068,6 +1068,7 @@ footer .footer-bar,
     .features-image {
         display: none;
     }
+
     .list-1 {
         text-align: left;
     }
@@ -1129,6 +1130,13 @@ footer .footer-bar,
         margin-bottom: 12px;
     }
 
+    .features-image {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .features-image .slider {
+        height: 300px !important;
+    }
     .navbar .navbar-nav .nav-item .nav-link {
         margin: 0px 20px;
     }
@@ -1262,4 +1270,8 @@ footer .footer-bar,
         height: 200px;
     }
 
+    .features-image .slider {
+        width: 260px !important;
+        height: 260px !important;
+    }
 }
