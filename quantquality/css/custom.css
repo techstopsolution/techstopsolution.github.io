@@ -281,7 +281,7 @@ input[type=number] {
 .swiper-button-next {
     display: none;
 }
-.animate {
+.animation-class {
     color: #f2f2f2 !important;
 	font-size: 17px;
 	letter-spacing: 0px;
@@ -1037,6 +1037,9 @@ footer .footer-bar,
     .list-2 .dot-line.center-line {
         left: -16px;
     }
+    .customized-inspection-report-sec .slider {
+        height: 515px;
+    }
 }
 @media only screen and (max-width: 992px) {
     .navbar.nav-light.nav-sticky .nav-item .nav-link {
@@ -1048,7 +1051,7 @@ footer .footer-bar,
     }
 
     .gauge .slider {
-        height: 165px;
+        height: 160px;
     }
 
     .features-image {
@@ -1081,9 +1084,21 @@ footer .footer-bar,
     .features-item-header {
         font-size: 1rem !important;
     }
+    .rework-repair-sec .slider {
+        height: 270px;
+    }
+    .customized-inspection-report-sec .slider {
+        height: 385px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    .design-arrow {
+        margin: 50px auto 0;
+    }
+    .design-arrow::before {
+        height: 40px;
+    }
     .slide-inner {
         background: left center;
     }
@@ -1142,6 +1157,13 @@ footer .footer-bar,
         border: none !important;
     }
 
+    .rework-repair-sec .slider {
+        height: 414px;
+    }
+
+    .customized-inspection-report-sec .slider {
+        height: 285px;
+    }
 }
 
 @media only screen and (max-width: 580px) {
@@ -1160,6 +1182,14 @@ footer .footer-bar,
     .feature-contant {
         margin-left: 30px;
     }
+    
+    .rework-repair-sec .slider {
+        height: 382px;
+    }
+    
+    .customized-inspection-report-sec .slider {
+        height: 265px;
+    }
 
 }
 
@@ -1173,13 +1203,20 @@ footer .footer-bar,
         line-height: 28px;
     }
 
-    .feature .feature-icon {
-        width: 55px;
-        height: 55px;
+    .inspection-sorting .slider {
+        height: 250px;
     }
 
-    .inspection-sorting .slider {
+    .gauge .slider {
         height: 100px;
+    }
+
+    .rework-repair-sec .slider {
+        height: 355px;
+    }
+    
+    .customized-inspection-report-sec .slider {
+        height: 235px;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -1193,11 +1230,23 @@ footer .footer-bar,
     }
 
     .inspection-sorting .slider {
-        height: 80px;
+        height: 200px;
     }
 
     .feature-contant {
         margin-left: 32px;
+    }
+
+    .gauge .slider {
+        height: 100px;
+    }
+
+    .rework-repair-sec .slider {
+        height: 275px;
+    }
+
+    .customized-inspection-report-sec .slider {
+        height: 200px;
     }
 
 }

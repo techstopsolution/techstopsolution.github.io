@@ -72,7 +72,6 @@ $(document).ready(function(){
 
 });
 
-
 // function visible(partial) {
 //     var $t = partial,
 //     $w = jQuery(window),
@@ -126,7 +125,22 @@ animations.forEach(animation => {
     });
 })
 
-
+// swiper slide to query run
+swiper.on( 'slideChange', function() {
+    if ( swiper.activeIndex > swiper.previousIndex ) {
+        $(".animation-class").removeClass("animate");
+        setTimeout(
+        function() {
+            $(".animation-class").delay(500).addClass("animate");
+        }, 5);
+    } else {
+        $(".animation-class").removeClass("animate");
+        setTimeout(
+        function() {
+            $(".animation-class").delay(500).addClass("animate");
+        }, 5);
+    }
+});
 
 
 // career filter query
