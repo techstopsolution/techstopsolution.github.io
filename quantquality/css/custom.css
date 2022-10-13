@@ -165,6 +165,10 @@ input[type=number] {
     color: #24272c;
 }
 
+.navbar.nav-sticky {
+    background-color: #fff !important;
+}
+
 .navbar.nav-light.nav-sticky .nav-item .nav-link:hover, .navbar.nav-light.nav-sticky .nav-item .nav-link.active, .navbar.nav-light.nav-sticky .nav-item .nav-link:active {
     color: #ed2931 !important;
 }
@@ -945,6 +949,8 @@ footer .footer-bar,
 }
 
 
+
+
 @media (min-width: 600px) {
     .features-inner {
         display: grid;
@@ -986,6 +992,11 @@ footer .footer-bar,
 
 
 @media (max-width: 991px) {
+    .navbar {
+        background-color: transparent !important;
+    }
+
+
     .navbar .menu-social {
 		margin-bottom: 0px !important;
 		font-size: 20px;
@@ -1096,9 +1107,11 @@ footer .footer-bar,
     .design-arrow {
         margin: 50px auto 0;
     }
+
     .design-arrow::before {
         height: 40px;
     }
+
     .slide-inner {
         background: left center;
     }
