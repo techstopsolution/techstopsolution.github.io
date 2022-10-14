@@ -12,8 +12,8 @@
 
 window.addEventListener('load', fn, false)
 
-//  window.onload = function loader() {
-function fn() {
+ window.onload = function loader() {
+// function fn() {
   // Preloader
   if (document.getElementById('preloader')) {
     setTimeout(() => {
