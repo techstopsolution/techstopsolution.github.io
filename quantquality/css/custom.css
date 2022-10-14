@@ -384,7 +384,7 @@ input[type=number] {
 }
 .are-you-looking {
     padding: 80px 0;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
