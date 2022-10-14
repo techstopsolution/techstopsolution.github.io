@@ -159,17 +159,17 @@ $('#search').on('keyup', function() {
     });
 });
 
-
-
+$(document).on("click",".dropdown-custom",function() {
+    console.log("drop");
+    $(".navbar-collapse").removeClass("show");
+});
 
 
 // International Teliphone Input query 
 var input = document.querySelector("#phoneNumber");
 var iti = window.intlTelInput(input, {
-    // separateDialCode:true,
     utilsScript: "js/utils.js",
 });
-
-// store the instance variable so we can access it in the console e.g. window.iti.getNumber()
 window.iti = iti;
+
 
