@@ -384,6 +384,11 @@ input[type=number] {
 }
 .are-you-looking {
     padding: 80px 0;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .are-you-looking .btn-light {
     color: #fff !important;
