@@ -208,11 +208,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="my-2">
-                                        <label for="contactPhoneType" class="form-label">Country/Region of Residence</label>
-                                        <select class="form-select" id="contactPhoneType">
-                                            <option selected>- Select country/region -</option>
-                                            <option value="1">Mobile</option>
-                                            <option value="2">Landline</option>
+                                        <label for="country" class="form-label">Country/Region of Residence</label>
+                                        <select class="form-select" id="country">
+                                            <option>- select country -</option>
                                         </select>
                                     </div>
                                 </div>
@@ -220,11 +218,15 @@
                                 <div class="col-md-6">
                                     <div class="my-2">
                                         <label for="state" class="form-label">State</label>
-                                        <select class="form-select" id="state">
-                                            <option selected>- Select type -</option>
-                                            <option value="1">Mobile</option>
-                                            <option value="2">Landline</option>
-                                        </select>
+                                        <span id="">
+                                            <select class="form-select" id="state-code">
+                                                <option selected id="state">- Select type -</option>
+                                            </select>
+                                        </span>
+                                        <!-- <input type="text" id="state"> -->
+                                        <!-- <span id="state-code">
+                                            <input type="text" id="state">
+                                        </span> -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -496,16 +498,16 @@
         <script src="js/gumshoe.js"></script>
         <script src="js/feather.min.js"></script>
         <script src="js/intlTelInput.js"></script>
-
         <script src="js/slick.js"></script>
+        <script src="js/country-states.js"></script>
+
+
 	    
         <!-- Custom -->
 	    <script src="js/plugins.init.js"></script>
 	    <script src="js/app.js"></script>
 	    <script src="js/script.js"></script>
 
-        <script>
-    
-        </script>
+            
     </body>
 </html>
