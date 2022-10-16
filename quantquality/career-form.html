@@ -36,7 +36,7 @@
 
 	<body>
 
-        <!-- Navbar section starts -->
+        <!-- Hedding section Start -->
         <nav id="navbar" class="navbar navbar-expand-lg nav-light fixed-top sticky">
             <div class="container" style="z-index: 3;">
                 <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,7 +115,7 @@
             </div>
 
         </nav>
-        <!-- Navbar section end -->
+        <!-- Hedding section end -->
 
         <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
@@ -266,13 +266,17 @@
                                 <div class="col-md-6">
                                     <div class="my-2">
                                         <label for="sponsorship" class="form-label">Require Immigration Sponsorship?</label>
-                                        <input type="text" class="form-control" id="sponsorship">
+                                        <select class="form-select" id="sponsorship">
+                                            <option selected>- Select type -</option>
+                                            <option value="1">Yes</option>
+                                            <option value="2">No</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="my-2">
                                         <label for="WhenCanYouStartWork" class="form-label">When can you start work?</label>
-                                        <input type="text" class="form-control" id="WhenCanYouStartWork">
+                                        <input type="date" class="form-control" id="WhenCanYouStartWork">
                                     </div>
                                 </div>
                                 <div class="col-md-6">

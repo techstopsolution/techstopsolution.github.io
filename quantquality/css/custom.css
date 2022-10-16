@@ -120,7 +120,7 @@ input[type=number] {
     transform: rotate(45deg);
 }
 
-/* Navbar section starts */
+/* Hedding section Start */
 .navbar .navbar-toggler {
     color: #ed2931;
 }
@@ -725,6 +725,18 @@ footer .footer-bar,
 
 .inspection-sorting .feature .feature-icon img {
     width: 60% !important;
+}
+
+.inspection-sorting .feature .feature-icon i {
+    color: #fff;
+    font-size: 28px;
+}
+
+.inspection-sorting .feature .feature-icon span {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ed2931;
 }
 
 .inspection-sorting .feature h3 {
