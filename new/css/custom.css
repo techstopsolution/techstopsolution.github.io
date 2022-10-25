@@ -254,6 +254,14 @@ input[type=number] {
     font-size: 40px;
 }
 
+.consultation-content h2 span {
+    color: #fff;
+}
+
+.consultation-content p {
+    font-size: 18px;
+}
+
 
 /* Why Choose Us Starts */
 .why-choose-us .content {
