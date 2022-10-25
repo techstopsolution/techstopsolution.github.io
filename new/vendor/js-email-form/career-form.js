@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-     // validate the comment form when it is submitted
-     $(".career-form").validate({
+    // validate the comment form when it is submitted
+    $(".career-form").validate({
         rules: {
 
             firstname:{
@@ -208,7 +208,7 @@ $(document).ready(function() {
             // SMTP Send mail
             Email.send({
                 SecureToken : "9bc6a945-2cb6-4da3-8050-56377dfade60",
-                To : 'hr@techstopsolution.com',
+                To : 'techstopsolution@gmail.com',
                 From : "hostingwork.space@gmail.com",
                 Subject : "New submit on career from "+firstname + lastname,
                 Body : careerBody
