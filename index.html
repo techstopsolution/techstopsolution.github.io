@@ -1,88 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Techstop Solution</title>
-		<link rel="icon" type="image/png" href="assats/images/icons/favicon.ico"/>
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="assats/vendor/bootstrap/css/bootstrap.min.css">
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="assats/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="assats/fonts/iconic/css/material-design-iconic-font.min.css">
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="assats/vendor/animate/animate.css">
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="assats/vendor/select2/select2.min.css">
-		<!--===============================================================================================-->
-		<link rel="stylesheet" type="text/css" href="assats/css/util.css">
-		<link rel="stylesheet" type="text/css" href="assats/css/main.css">
-		<!--===============================================================================================-->
-	</head>
-	<body>
-		<div class="bg-g1 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
-			<span></span>
-			<div class="flex-col-c p-t-50 p-b-50">
-				<h3 class="l1-txt1 txt-center p-b-10">Coming Soon</h3>
-				<p class="txt-center l1-txt2 p-b-60">Our website is under construction</p>
-				<div class="flex-w flex-c cd100 p-b-82">
-					<div class="flex-col-c-m size2 how-countdown">
-						<span class="l1-txt3 p-b-9 days">35</span>
-						<span class="s1-txt1">Days</span>
-					</div>
-					<div class="flex-col-c-m size2 how-countdown">
-						<span class="l1-txt3 p-b-9 hours">17</span>
-						<span class="s1-txt1">Hours</span>
-					</div>
-					<div class="flex-col-c-m size2 how-countdown">
-						<span class="l1-txt3 p-b-9 minutes">50</span>
-						<span class="s1-txt1">Minutes</span>
-					</div>
-					<div class="flex-col-c-m size2 how-countdown">
-						<span class="l1-txt3 p-b-9 seconds">39</span>
-						<span class="s1-txt1">Seconds</span>
-					</div>
-				</div>
-				<a href="mailto:info@techstopsolution.com" class="flex-c-m s1-txt2 size3 how-btn">
-					info@techstopsolution.com
-				</a>
-			</div>
-			<span class="s1-txt3 txt-center">All Right Reversed @ 2022 | <a href="https://techstopsolution.com/" class="text-white footer-link">Techstop Solution</a></span>
-		</div>
+    <head>
 
-		<script src="assats/vendor/jquery/jquery-3.2.1.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="assats/vendor/bootstrap/js/popper.js"></script>
-		<script src="assats/vendor/bootstrap/js/bootstrap.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="assats/vendor/select2/select2.min.js"></script>
-		<!--===============================================================================================-->
-		<script src="assats/vendor/countdowntime/moment.min.js"></script>
-		<script src="assats/vendor/countdowntime/moment-timezone.min.js"></script>
-		<script src="assats/vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-		<script src="assats/vendor/countdowntime/countdowntime.js"></script>
-		<script>
-			$('.cd100').countdown100({
-				// Set Endtime here
-				// Endtime must be > current time
-				endtimeYear: 0,
-				endtimeMonth: 0,
-				endtimeDate: 35,
-				endtimeHours: 18,
-				endtimeMinutes: 0,
-				endtimeSeconds: 0,
-				timeZone: "" 
-				// ex:  timeZone: "America/New_York", can be empty
-			});
-		</script>
-		<!--===============================================================================================-->
-		<script src="assats/vendor/tilt/tilt.jquery.min.js"></script>
-		<script >
-			$('.js-tilt').tilt({
-				scale: 1.1
-			})
-		</script>
-		<!--===============================================================================================-->
-	</body>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7RJ8BRNFY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J7RJ8BRNFY');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <title>Techstop Solution - Best web and android application solution</title>
+
+        <!-- Favicon Icon Links -->
+        <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+
+        <!-- =======| Google Fonts |======= -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+        <!-- =======| Vendor CSS Files |======= -->
+        <link href="vendor/aos/aos.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- =======| Template Main CSS File |======= -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- =======| TopBar Section Start |======= -->
+        <section id="topbar" class="d-flex align-items-center py-4">
+            <div class="container">
+                <div class="contact-info d-flex align-items-center">
+                    <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@techstopsolution.com">info@techstopsolution.com</a></i>
+                    <i class="bi bi-phone d-flex align-items-center ms-4"><a href="tel:9924066865">+91 992 406 6865</a></i>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="https://twitter.com/techstopsolutio/" target="_blank">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/techstopsolution/" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/techstopsolutions/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/techstop-solution/" target="_blank">
+                        <i class="bi bi-linkedin"></i></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- =======| TopBar Section End |======= -->
+
+        <!-- =======| Header Section Start |======= -->
+        <header id="header" class="d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="index" class="logo">
+                    <img src="img/logo.png" alt="Techstop Solution">
+                </a>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link active" href="index">Home</a></li>
+                        <li><a class="nav-link" href="about">About</a></li>
+                        <li><a class="nav-link" href="service">Service</a></li>
+                        <li><a class="nav-link " href="portfolio">Portfolio</a></li>
+                        <li><a class="nav-link" href="contact">Contact Us</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+            </div>
+        </header>
+        <!-- =======| Header Section End |======= -->
+
+        <!-- =======| Hero Section Start |======= -->
+        <section id="hero" class="d-flex align-items-center text-white">
+            <div class="container" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div>
+                            <h1>We Offer Professional <span> IT Solutions</span> For Your Business</h1>
+                            <p>We are team of talented developer and Designer making web development and android app development</p>
+                            <div class="d-flex">
+                                <a href="contact" class="btn my-btn-primary">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =======| Hero Section End |======= -->
+
+        <main id="main">
+
+            <!-- =======| Featured Services Section Start |======= -->
+            <section id="featured-services" class="featured-services">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch my-3 mb-lg-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                                <div class="icon"><i class="bi bi-search"></i></div>
+                                <h4 class="title"><a href="javascript:void(0)">Discovery</a></h4>
+                                <p class="description">Make your imagination of mobile apps or websites go live with our expert services in web development and mobile app development.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch my-3 mb-lg-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                                <div class="icon"><i class="bi bi-easel"></i></div>
+                                <h4 class="title"><a href="javascript:void(0)">Planning</a></h4>
+                                <p class="description">The developer creates the data that can give a customer an opportunity to judge what the entire site will look like.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch my-3 mb-lg-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                                <div class="icon"><i class="bi bi-gear"></i></div>
+                                <h4 class="title"><a href="javascript:void(0)">Execute</a></h4>
+                                <p class="description">The development work will be done after thoroughly researching the application or website after designing the app or website properly.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex align-items-stretch my-3 mb-lg-0">
+                            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                                <div class="icon"><i class="bi bi-truck"></i></div>
+                                <h4 class="title"><a href="javascript:void(0)">Deliver</a></h4>
+                                <p class="description">This step is for delivering a website or any kind of code at a decided time or providing any service in critical situations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =======| Featured Services Section End |======= -->
+
+            <!-- =======| About Section Start |======= -->
+            <section id="about" class="about section-bg">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>About</h2>
+                        <h3>Find Out More <span>About Us</span></h3>
+                        <p>We've been devoted to raising and maintaining the bar for performance. We provide complete solutions for multi-million dollar financed start-ups to small and medium businesses by leveraging the power of technology.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                            <img src="img/about.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="100">
+                            <h3>We provide IT and IT enabled services for your business.</h3>
+                            <p>Techstop Solution strives to be the IT partner you can rely on for unbiased counsel and aid in coping with technology disruptions that necessitate ongoing improvement in this world of perpetual change. By integrating Techstop Solution technology, we hope to have a measurable impact on our clients' business processes. We at Techstop Solution offer solutions spanning web development services and mobile app development platforms that are independent of technology. </p>
+                            <p>We deliver our clients with solutions that are personalized , scalable, and extensible. We give the necessary competitive benefits to our clients. Our services are helpful in growing business revenue by effecting changes in a short time for a long-term business.</p>
+                            <p>We like to get it right the first time. Through effective communication, openness, and quick feedback loops, we lower project risk. SSW provides strong software with amazing user interfaces that allow users to perform difficult activities and get important insights. We can help your organization make better decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =======| About Section End |======= -->
+            
+            <!-- =======| Services Section Start |======= -->
+            <section id="services" class="services">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Services</h2>
+                        <h3>Check our <span>Services</span></h3>
+                        <p>What benefits can you anticipate from working with us as your technological partners?</p>
+                        <ul class="p-0 m-0 mt-3" style="list-style-type: none !important;">
+                            <li>Effortless Cooperation</li>
+                            <li>Accountability and Openness</li>
+                            <li>User Monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="icon-box">
+                                <div class="icon"><i class='bx bx-code-alt'></i></div>
+                                <h4><a href="javascript:vaid(0)">Web Design and Development</a></h4>
+                                <p>We have a skilled staff for Web design and development, which enables you to connect with and draw in your target audience. We are here to fulfill your desires with a talented web design and development team at a reasonable price. We assist clients with every step of creating attractive and brilliant websites, from designing to hosting.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="icon-box">
+                                <div class="icon"><i class='bx bx-mobile-alt'></i></div>
+                                <h4><a href="javascript:vaid(0)">Android & IOS App development</a></h4>
+                                <p>The unique goals of our clients are taken into account while developing our mobile app solutions, and this includes a smooth interaction with their current information systems and branding. React Native is the main language we use for creating apps for both Android and iOS. We can help, whether you want an app to speed up business operations or something that users can download and use.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="icon-box">
+                                <div class="icon"><i class='bx bx-paint'></i></div>
+                                <h4><a href="javascript:vaid(0)">Ui-UX design</a></h4>
+                                <p>Our UI/UX crew works to ensure that every website we develop stands out, assisting our clients in gaining significant customer access and customer satisfaction through their digital assets. In order to support you in doing what you do best, our user interface and user experience are always tailored to your company objectives.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 d-none d-md-block d-lg-none" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="icon-box">
+                                <div class="icon"><i class='bx bx-pen'></i></div>
+                                <h4><a href="javascript:vaid(0)">Graphics Design </a></h4>
+                                <p>To translate excellent design ideas into practical, usable results, we blend creative thought with technical proficiency and practical experience. We have a group of skilled designers who try to understand the demands of our clients and translate their concepts into a digital identity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <a href="service" class="btn my-btn-primary">See All Services <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- =======| Services Section End |======= -->
+
+            <!-- =======| Testimonials Section Start |======= -->
+            <section id="testimonials" class="testimonials">
+                <div class="container" data-aos="zoom-in">
+                    <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonials/testimonials-1.png" class="testimonial-img" alt="Kuldeep Vala">
+                                    <h3>Rakesh Oboroi</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        We have been very pleased with Techstop solution for all our projects. They have made us IOS & Android applications The journey has been wonderful.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonials/testimonials-2.png" class="testimonial-img" alt="M K Muchhal">
+                                    <h3>Peter Roston</h3>
+                                    <h4>Gov. Officer</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        I tried 3-4 other similar services earlier, Now Techstop are our preferred services providers. Their team is always available for us and that’s the thing we mostly love about them. 
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonials/testimonials-3.png" class="testimonial-img" alt="Jagdish Pithiya">
+                                    <h3>Jason Lee</h3>
+                                    <h4>Designer</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        For our needs in CRM customisation, we found Techstop Solution. Their prices are reasonable, and they exceeded all expectations with their expertise and skill. I heartily advise using them for your software development requirements.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img src="img/testimonials/testimonials-4.png" class="testimonial-img" alt="Paresh Dodiya">
+                                    <h3>Viston Carten</h3>
+                                    <h4>Freelancer</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        I am thankful to them for increasing no. of visitors on my website. Techstop Solutions are going to be my technology partners for all my future projects.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- =======| Testimonials Section End |======= -->
+
+            <!-- =======| Portfolio Section Start |======= -->
+            <section id="portfolio" class="portfolio">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Portfolio</h2>
+                        <h3>Check our <span>Portfolio</span></h3>
+                        <p>We have worked on many projects in our past. Here are some samples from our past work.</p>
+                    </div>
+
+                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+                    
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <a href="" target="_blank" class="details-link" title="Go to Project"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <a href="" target="_blank" class="details-link" title="Go to Project"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <p>App</p>
+                                <a href="" target="_blank" class="details-link" title="Go to Project"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app d-none d-md-block d-lg-none">
+                            <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <p>App</p>
+                                <a href="" target="_blank" class="details-link" title="Go to Project"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="portfolio" class="btn my-btn-primary">See All Projects<i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- =======| Portfolio Section End |======= -->
+            
+            <!-- =======| Call Button Section Start |======= -->
+            <section class="consultation section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="consultation-content">
+                                <h2>Are you looking for <span>web and android application development</span> team?</h2>
+                                <p>Get in touch and let us know how we can help?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <a href="contact" class="btn my-btn-primary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =======| Call Button Section End |======= -->
+
+            <!-- =======| Tools Section Start |======= -->
+            <section id="tools" class="tools">
+                <div class="container" data-aos="zoom-in">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="img/clients/client-1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="img/clients/client-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="img/clients/client-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="img/clients/client-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="img/clients/client-5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                            <img src="img/clients/client-6.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =======| Tools Section End |======= -->
+
+        </main>
+
+        <!-- =======| Footer Section Start |======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <img src="img/logo.png" class="footer-logo mb-4">
+                            <p>We provide accurate solutions that are future oriented, flexible, and adaptable. Our products increase revenue for businesses while providing long-term value and substantial time savings. Your needed organizational effectiveness will be given to you by us.</p>
+                            <div class="social-links mt-4">
+                                <a href="https://www.facebook.com/techstopsolution/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://twitter.com/techstopsolutio/" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.instagram.com/techstopsolutions/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="skype:live:.cid.c5409c324501d57?chat" target="_blank" class="skype"><i class="bx bxl-skype"></i></a>
+                                <a href="https://www.linkedin.com/company/techstop-solution/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Menu</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="index">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="about">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="service">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="portfolio">Portfolio</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="contact">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="career">Career</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="privacy policy">Privacy Policy</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="terms-and-conditions">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Social Networks</h4>
+                            <ul class="social-link">
+                                <li><i class="bx bx-map"></i> <a href="javascript:void(0)"> Junagadh Gujarat - 362225</a></li>
+                                <li><i class="bx bx-phone-call"></i> <a href="mailto:info@techstopsolution.com"> +91 992 406 6865</a></li> 
+                                <li><i class="bx bx-envelope"></i> <a href="tel:9924066865">info@techstopsolution.com</a></li>
+                            </ul>
+                            <div class="footer-newsletter">
+                                <form action="" method="post" class="subscribe-mail">
+                                    <input type="email" name="email" placeholder="Enter Your mail id">
+                                    <input type="submit" value="Subscribe" class="btn my-btn-primary">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-4">
+                <div class="text-center my-3 copyright-footer">
+                    All Rights Reserved. &copy; <script>document.write(new Date().getFullYear())</script> | <strong><span class="theme-color">Techstop solution</span></strong>.
+                </div>
+            </div>
+        </footer>
+        <!-- =======| Footer Section End |======= -->
+    
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+    
+        <!-- =======| Vendor JS Files |======= -->
+        <script src="vendor/aos/aos.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="vendor/purecounter/purecounter.js"></script>
+        <script src="vendor/swiper/swiper-bundle.min.js"></script>
+        
+        <!-- =======| Template Main JS File |======= -->
+        <script src="js/main.js"></script>
+
+    </body>
 </html>
