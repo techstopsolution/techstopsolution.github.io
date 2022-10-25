@@ -92,7 +92,7 @@ input[type=number] {
 }
 
 
-/* TopBar Section Starts */
+/* TopBar Section Start */
 #topbar {
     font-size: 16px;
 }
@@ -112,7 +112,7 @@ input[type=number] {
 
 
 
-/* Header Section Starst */
+/* Header Section Start */
 .navbar a {
     font-size: 17px;
 }
@@ -134,7 +134,7 @@ input[type=number] {
 }
 
 
-/* Hiro Section Starts */
+/* Hiro Section Start */
 #hero h1 {
     font-size: 40px;
     margin-bottom: 15px;
@@ -170,12 +170,12 @@ input[type=number] {
 }
 
 
-/* Featured Services Section */
+/* Featured Services Section start */
 .featured-services .title {
     font-size: 22px;
 }
 
-/* About us section starts */
+/* About us section start */
 .about .content h3 {
     font-weight: 600;
     font-size: 38px;
@@ -188,7 +188,7 @@ input[type=number] {
 }
 
 
-/* Services section starts */
+/* Services section start */
 .services .icon-box {
     padding: 50px 30px;
     border-radius: 0.5rem;
@@ -217,21 +217,21 @@ input[type=number] {
 }
 
 
-/* Testimonial Section Starts */
+/* Testimonial Section Start */
 
 .testimonials .testimonial-item h3 {
     font-size: 24px;
 }
 
 
-/* Frequently Asked Questions Starst */
+/* Frequently Asked Questions start */
 .faq .faq-list i {
     left: auto;
     right: 0;
 }
 
 
-/* Portfolio Section Starts */
+/* Portfolio Section Start */
 .portfolio .portfolio-item .portfolio-info .details-link {
     right: 20px;
 }
@@ -242,7 +242,7 @@ input[type=number] {
 }
 
 
-/* Start Call Button Section */
+/* Call Button Section start */
 .consultation {
     background-image: url(../img/consultation-bg.jpg);
     background-size: cover;
@@ -263,7 +263,7 @@ input[type=number] {
 }
 
 
-/* Why Choose Us Starts */
+/* Why Choose Us Start */
 .why-choose-us .content {
     display: flex;
     align-items: center;
@@ -288,7 +288,7 @@ input[type=number] {
 }
 
 
-/* Frequently Asked Questions Starts */
+/* Frequently Asked Questions Start */
 .faq {
     padding: 100px 0;
 }
@@ -304,13 +304,13 @@ input[type=number] {
 }
 
 
-/* Maps Section Starts */
+/* Maps Section Start */
 .maps {
     padding-bottom: 100px;
 }
 
 
-/* Career Section Starts */
+/* Career Section Start */
 .career .section-title h3 {
     font-size: 24px;
     max-width: 545px;
@@ -347,7 +347,7 @@ input[type=number] {
     display: none;
 }
 
-/* Contact Section Starts */
+/* Contact Section Start */
 .contact .js-email-form button[type="submit"] {
     background: transparent;
 }
@@ -472,9 +472,12 @@ input[type=number] {
     }
 }
 
+/* Tools Section Start */
+.tools img {
+    max-width: 55%;
+}
 
-
-/* Footer Section Starts */
+/* Footer Section Start */
 #footer{
     padding: 0%;
     background: #1f1f1f;
@@ -558,7 +561,7 @@ input[type=number] {
 }
 
 
-/* 404 error section starts */
+/* 404 error section start */
 .page-not-found .btn {
     display: inline-block;
     margin-top: 20px;
