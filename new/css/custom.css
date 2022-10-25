@@ -692,7 +692,7 @@ input[type=number] {
     .contact-info {
         display: block !important;
         line-height: 20px !important;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     #topbar .contact-info i {
