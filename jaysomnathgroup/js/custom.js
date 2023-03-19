@@ -13,8 +13,8 @@
       autoplayTimeout: 5000,
       nav: true,
       navText: [
-        '<img src="img/icon/left.svg" alt="">',
-        '<img src="img/icon/right.svg" alt="">'
+        '<img src="img/icon/left.svg">',
+        '<img src="img/icon/right.svg">'
 
       ],
       responsive: {
