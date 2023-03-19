@@ -564,6 +564,9 @@ input[type=number] {
     background: #106eea;
 }
 
+.footer-newsletter {
+    display: none;
+}
 
 /* 404 error section start */
 .page-not-found .btn {
