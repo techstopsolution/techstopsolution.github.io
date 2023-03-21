@@ -122,6 +122,7 @@ input[type=number] {
 
 #hero {
     height: 85vh;
+    background-position-x: center;
 }
 
 #hero:before {
@@ -171,6 +172,15 @@ input[type=number] {
 .hiro-second h1 {
     margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
 
 /* Featured Services Section start */
 .featured-services .title {
@@ -634,6 +644,14 @@ input[type=number] {
         display: none;
     }
 
+    #hero h1 {
+        max-width: 560px;
+    }
+
+    #hero p {
+        max-width: 435px;
+    }
+
     .about .content h3 {
         font-size: 40px;
     }
@@ -675,6 +693,10 @@ input[type=number] {
     
     .hiro-second h1 {
         font-size: 35px !important;
+    }
+
+    #hero h1 {
+        font-size: 30px;
     }
 
     .logo-career {
@@ -727,6 +749,11 @@ input[type=number] {
         margin-left: 0 !important;
     }
 
+    #hero h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
     .hiro-second h1 {
         font-size: 28px !important;
     }
@@ -744,4 +771,11 @@ input[type=number] {
         margin-bottom: 12px;
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+    #hero h1 {
+        font-size: 21px;
+        line-height: 30px;
+    }
 }
