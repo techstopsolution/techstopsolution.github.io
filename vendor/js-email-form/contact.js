@@ -1,62 +1,62 @@
 $(document).ready(function() {
 
     // validate the comment form when it is submitted
-    // $(".js-email-form").validate({
-    //     rules: {
+    $(".js-email-form").validate({
+        rules: {
 
-    //         name:{
-    //             required: true,
-    //         },
-    //         email: {
-    //             required: true,
-    //             email: true
-    //         },
-    //         number: {
-    //             required: true,
-    //             minlength: 4,
-    //             maxlength: 13
-    //         },
-    //         subject:{
-    //             required: true,
-    //         },
-    //         message:{
-    //             required: true,
-    //         },
-    //     },
-    //     messages: {
-    //         name: {
-    //             required: "Please enter your name",
-    //         },
-    //         email: {
-    //             required: "Please enter email address",
-    //         },
-    //         number: {
-    //             required: "Please enter phone number",
-    //             validnum: "Please enter phone number between length 4 to 13",
-    //             minlength: "Mobile number must be atleast 4 digits.",
-    //             maxlength: "Mobile number cannot be more than 13 digits.",
-    //         },
-    //         subject:{
-    //             required: "Please enter subject"
-    //         },
-    //         message:{
-    //             required: "Please enter message"
-    //         },
-    //     }
+            name:{
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            number: {
+                required: true,
+                minlength: 4,
+                maxlength: 13
+            },
+            subject:{
+                required: true,
+            },
+            message:{
+                required: true,
+            },
+        },
+        messages: {
+            name: {
+                required: "Please enter your name",
+            },
+            email: {
+                required: "Please enter email address",
+            },
+            number: {
+                required: "Please enter phone number",
+                validnum: "Please enter phone number between length 4 to 13",
+                minlength: "Mobile number must be atleast 4 digits.",
+                maxlength: "Mobile number cannot be more than 13 digits.",
+            },
+            subject:{
+                required: "Please enter subject"
+            },
+            message:{
+                required: "Please enter message"
+            },
+        }
 
-    // });
+    });
 
-    // $(".submit").click(function() {
+    $(".submit").click(function() {
         
-    //     if($(".js-email-form").valid()) {
-    //         $(".contact-msg").find(".snippet").css("display", "block");
+        if($(".js-email-form").valid()) {
+            $(".contact-msg").find(".snippet").css("display", "block");
 
             // SMTP JS
-            // var name = $('#name').val();
-            // var email = $('#email').val();
-            // var number = $('#number').val();
-            // var subject = $('#subject').val();
-            // var message = $('#message').val();
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var number = $('#number').val();
+            var subject = $('#subject').val();
+            var message = $('#message').val();
             var Body = "<style>";
             Body += "body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }";
             Body += "table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }";
@@ -191,35 +191,35 @@ $(document).ready(function() {
             Body += "</table>";
             Body += "</body>";
 
-            document.write(Body)
+            // document.write(Body)
 
             //SMTP Send mail
-//             Email.send({
-//                 SecureToken : "9bc6a945-2cb6-4da3-8050-56377dfade60",
-//                 To : 'techstopsolution@gmail.com',
-//                 From : "hostingwork.space@gmail.com",
-//                 Subject : "New message on contact from "+name,
-//                 Body : Body
-//             }).then(
-//                 message =>{
-//                     if(message=='OK'){
-//                         $(".contact-msg").find(".snippet").css("display", "none");
-//                         $(".contact-msg").find(".contact-result-text").css("color", "#4CAF50");
-//                         $(".contact-msg").find(".contact-result-text").text("Your message has been successfully sent!");
-//                         $(".js-email-form").trigger("reset");
+            Email.send({
+                SecureToken : "9bc6a945-2cb6-4da3-8050-56377dfade60",
+                To : 'techstopsolution@gmail.com',
+                From : "hostingwork.space@gmail.com",
+                Subject : "New message on contact from "+name,
+                Body : Body
+            }).then(
+                message =>{
+                    if(message=='OK'){
+                        $(".contact-msg").find(".snippet").css("display", "none");
+                        $(".contact-msg").find(".contact-result-text").css("color", "#4CAF50");
+                        $(".contact-msg").find(".contact-result-text").text("Your message has been successfully sent!");
+                        $(".js-email-form").trigger("reset");
                         
-//                     }
-//                     else{
-//                         $(".contact-msg").find(".snippet").css("display", "none");
-//                         $(".contact-msg").find(".contact-result-text").css("color", "#f00");
-//                         $(".contact-msg").find(".contact-result-text").text("Sorry, cannot send the message");
-//                         console.error (message);
-//                         $(".js-email-form").trigger("reset");
-//                     }
-//                 }
-//             );
-//         }
+                    }
+                    else{
+                        $(".contact-msg").find(".snippet").css("display", "none");
+                        $(".contact-msg").find(".contact-result-text").css("color", "#f00");
+                        $(".contact-msg").find(".contact-result-text").text("Sorry, cannot send the message");
+                        console.error (message);
+                        $(".js-email-form").trigger("reset");
+                    }
+                }
+            );
+        }
 
 
-//     });
+    });
 });
