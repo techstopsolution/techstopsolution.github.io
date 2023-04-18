@@ -44,6 +44,7 @@ $(document).ready(function() {
         }
     });
 
+
     $(".submit").click(function() {
         
         if($(".js-email-form").valid()) {

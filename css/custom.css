@@ -153,32 +153,19 @@ input[type=number] {
 }
 
 .hiro-second {
+    background: url(../img/hero-second-bg.jpg) top left !important;
+    background-size: cover !important;
     height: 40vh !important;
 }
 
 .hiro-second h1 {
     text-align: center;
-}
-
-.hiro-second {
-    background: url(../img/hero-second-bg.jpg) top left !important;
-    background-size: cover !important;
+    margin-bottom: 0 !important;
 }
 
 .hiro-img img {
     width: 100%;
 }
-
-.hiro-second h1 {
-    margin-bottom: 0;
-}
-
-
-
-
-
-
-
 
 
 
