@@ -3,7 +3,6 @@ $(document).ready(function() {
     // validate the comment form when it is submitted
     $(".js-email-form").validate({
         rules: {
-
             name:{
                 required: true,
             },
@@ -43,7 +42,6 @@ $(document).ready(function() {
                 required: "Please enter message"
             },
         }
-
     });
 
     $(".submit").click(function() {
@@ -191,8 +189,6 @@ $(document).ready(function() {
             Body += "</table>";
             Body += "</body>";
 
-            // document.write(Body)
-
             //SMTP Send mail
             Email.send({
                 SecureToken : "9bc6a945-2cb6-4da3-8050-56377dfade60",
@@ -219,7 +215,6 @@ $(document).ready(function() {
                 }
             );
         }
-
 
     });
 });
