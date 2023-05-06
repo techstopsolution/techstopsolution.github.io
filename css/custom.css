@@ -239,6 +239,12 @@ input[type=number] {
 .portfolio .portfolio-item .portfolio-info .details-link {
     font-size: 28px;
 }
+.portfolio .portfolio-item .portfolio-info .preview-link {
+    right: 55px;
+}
+.glightbox-clean .gslide-title {
+    margin-bottom: 0;
+}
 
 
 /* Call Button Section start */
