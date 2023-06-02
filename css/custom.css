@@ -242,6 +242,9 @@ input[type=number] {
 .portfolio .portfolio-item .portfolio-info .preview-link {
     right: 55px;
 }
+.portfolio .portfolio-item .portfolio-info h4 {
+    margin-bottom: 3px;
+}
 .glightbox-clean .gslide-title {
     margin-bottom: 0;
 }
