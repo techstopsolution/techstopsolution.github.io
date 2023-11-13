@@ -35,7 +35,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  --moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 /* Button css */
@@ -295,7 +295,7 @@ input[type=number] {
 
 
 /* Portfolio Section Start */
-.portfolio .portfolio-item .portfolio-info .details-link {
+/* .portfolio .portfolio-item .portfolio-info .details-link {
     right: 20px;
 }
 
@@ -314,8 +314,20 @@ input[type=number] {
 
 .glightbox-clean .gslide-title {
     margin-bottom: 0;
-}
+} */
 
+.portfolio .portfolio-container .portfolio-item .portfolio-item-wrap {
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-transition: background-position 2s ease-out 0s;
+}
+.portfolio .portfolio-container .portfolio-item .portfolio-item-wrap:hover {
+    background-position: center 100%;
+
+}
 
 /* Call Button Section start */
 .consultation {
